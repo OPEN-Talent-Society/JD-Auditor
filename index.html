@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO & Meta Info -->
+    <title>The JD Auditor | Open Talent Society</title>
+    <meta name="description" content="Free Talent Intelligence tool by Open Talent Society. Audit Job Descriptions, extract Lightcast Skills, and generate AI interview guides." />
+    <meta name="keywords" content="Talent Intelligence, Job Description Analyzer, Lightcast Skills, HR Tech, Recruiting Tools, Open Talent Society, AI Interview Guide, JD Audit" />
+    <meta name="author" content="Open Talent Society" />
+    <meta name="theme-color" content="#1b4d3e" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://opentalentsociety.org/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://opentalentsociety.org/" />
+    <meta property="og:title" content="The JD Auditor - Open Talent Society" />
+    <meta property="og:description" content="Transform Job Descriptions into strategic intelligence. Standardize skills, audit bias, and reveal the persona." />
+    <meta property="og:image" content="https://opentalentsociety.org/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://opentalentsociety.org/" />
+    <meta property="twitter:title" content="The JD Auditor - Open Talent Society" />
+    <meta property="twitter:description" content="Transform Job Descriptions into strategic intelligence. Standardize skills, audit bias, and reveal the persona." />
+    <meta property="twitter:image" content="https://opentalentsociety.org/og-image.jpg" />
+
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AI Search Optimization (JSON-LD Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "The JD Auditor",
+      "url": "https://opentalentsociety.org",
+      "description": "A nonprofit talent intelligence tool that audits job descriptions for bias, extracts skills using the Lightcast Taxonomy, and generates interview strategies using Google Gemini.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Open Talent Society",
+        "url": "https://opentalentsociety.org",
+        "logo": "https://opentalentsociety.org/logo.png"
+      }
+    }
+    </script>
+
+    <style>
+      :root {
+        --bg-grid: #e2e8f0;
+      }
+      body { 
+        font-family: 'Inter', sans-serif; 
+        color: #0f172a; 
+        background-color: #f8fafc;
+        /* Mesh Gradient Background */
+        background-image: 
+          radial-gradient(at 0% 0%, hsla(160, 49%, 90%, 1) 0, transparent 50%), 
+          radial-gradient(at 100% 0%, hsla(160, 49%, 95%, 1) 0, transparent 50%);
+        overflow-x: hidden;
+      }
+      
+      /* Noise Texture Overlay */
+      .noise-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 50;
+        opacity: 0.03;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      }
+
+      .font-poppins {
+        font-family: 'Poppins', sans-serif;
+      }
+      .font-inter {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; border: 2px solid #f8fafc; }
+      ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+      
+      /* Animations */
+      .fade-enter { opacity: 0; transform: translateY(10px); }
+      .fade-enter-active { opacity: 1; transform: translateY(0); transition: opacity 500ms, transform 500ms; }
+
+      /* Print Styles for PDF Generation */
+      @media print {
+        @page { margin: 1cm; }
+        body {
+          background: white !important;
+          background-image: none !important;
+          color: black !important;
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+        .noise-overlay { display: none; }
+        
+        /* Hide interactive elements */
+        button, header, nav, .no-print {
+          display: none !important;
+        }
+        
+        /* Reset containers */
+        .max-w-5xl, .max-w-7xl {
+          max-width: none !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        /* Ensure Grid layouts flatten or adjust for print */
+        .print\:grid-cols-1 {
+          grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        }
+        
+        .break-inside-avoid {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div class="noise-overlay"></div>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
