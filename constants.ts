@@ -30,8 +30,8 @@ const getEnvVar = (key: string): string => {
 // Keys are loaded from environment variables with explicit fallbacks to ensure functionality.
 export const LIGHTCAST_CONFIG = {
   // Attempt to read variables first, fall back to provided credentials if missing
-  CLIENT_ID: getEnvVar('VITE_LIGHTCAST_CLIENT_ID') || "vawkzfb8w2hdb7ng", 
-  SECRET: getEnvVar('VITE_LIGHTCAST_SECRET') || "6gCVkBIl",
+  CLIENT_ID: getEnvVar('VITE_LIGHTCAST_CLIENT_ID'), 
+  SECRET: getEnvVar('VITE_LIGHTCAST_SECRET'),
   SCOPE: "emsi_open",
   AUTH_URL: "https://auth.emsicloud.com/connect/token",
   BASE_URL: "https://emsiservices.com/skills/versions/latest",
